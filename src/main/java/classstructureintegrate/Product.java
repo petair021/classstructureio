@@ -19,9 +19,9 @@ public class Product {
                 return price;
         }
 
-      public Integer increasePrice(int price){
-        return this.price = price + 10;
-      }
+        public Integer increasePrice(int price){
+                return this.price = price + 10;
+          }
 
         public Integer decreasePrice(int price){
                 return this.price = price - 10;
