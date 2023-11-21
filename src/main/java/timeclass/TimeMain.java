@@ -13,20 +13,20 @@ public class TimeMain {
         int seconds = scanner.nextInt();
 
         Time time = new Time(hours, minutes, seconds);
-        System.out.println("Az első időpont: " + (time.toString()) + "=" + (time.getInMinutes()));
+        System.out.println("Az első időpont percben: " + (time.toString()) + "=" + (time.getInMinutes()));
 
-        System.out.println("Adja meg az első időpontot - óra: ");
+        System.out.println("Adja meg a második időpontot - óra: ");
         int hours2 = scanner.nextInt();
-        System.out.println("Adja meg az első időpontot - perc: ");
+        System.out.println("Adja meg a második időpontot - perc: ");
         int minutes2 = scanner.nextInt();
-        System.out.println("Adja meg az első időpontot - másodpercperc: ");
+        System.out.println("Adja meg a második időpontot - másodpercperc: ");
         int seconds2 = scanner.nextInt();
 
 
         Time newTime = new Time(hours2, minutes2, seconds2);
-        System.out.println("A második időpont: " + (newTime.toString()) + "=" + (newTime.getInSecond()));
+        System.out.println("A második időpont másodpercben: " + (newTime.toString()) + "=" + (newTime.getInSecond()));
 
-        System.out.println(time.earlierThan(newTime));
+        System.out.println("Az első korábbi, mint a második: " + time.earlierThan(newTime));
     }
 
 }
